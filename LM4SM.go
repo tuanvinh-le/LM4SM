@@ -124,6 +124,7 @@ func main() {
 	}
 }
 
+
 // Public blocks (batch signatures) generation
 
 sigall := pairing.NewG1().Set1()
@@ -135,6 +136,7 @@ sigall := pairing.NewG1().Set1()
 
 sigall .Mul(sigall, signature[i])
 }
+
 
 // Smart contract
 
